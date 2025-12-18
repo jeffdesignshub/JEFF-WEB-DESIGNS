@@ -1,0 +1,118 @@
+.ticker-container {
+  background: linear-gradient(90deg, var(--primary-black), #1a1a2e);
+  color: white;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ticker-label {
+  background: var(--vibrant-orange);
+  padding: 0.4rem 1rem;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.ticker-wrapper {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-content {
+  display: flex;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  white-space: nowrap;
+}
+
+.ticker-text {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.ticker-separator {
+  color: var(--electric-blue);
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.countdown-badge {
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid var(--vibrant-orange);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  white-space: nowrap;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.countdown-timer {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--vibrant-orange);
+}
+
+.countdown-digit {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+@media (max-width: 768px) {
+  .ticker-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .ticker-label {
+    border-radius: 10px;
+    margin-right: 0;
+    align-self: flex-start;
+  }
+  
+  .countdown-badge {
+    margin: 0;
+    align-self: flex-start;
+  }
+}
