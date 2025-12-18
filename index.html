@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JEFF DESIGNS HUB - Professional Graphic Design, Website Development & Mobile App Creation in Kenya. Designing Ideas. Building Digital Experiences.">
+    <meta name="keywords" content="graphic design Kenya, website developer Kenya, mobile app developer, logo design, branding, web development Nairobi, digital agency Kenya">
+    <meta name="author" content="JEFF DESIGNS HUB">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jeffdesignshub.com/">
+    <meta property="og:title" content="JEFF DESIGNS HUB - Creative Design & Development Agency">
+    <meta property="og:description" content="Professional Graphic Design, Website Development & Mobile App Creation in Kenya">
+    <meta property="og:image" content="https://jeffdesignshub.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jeffdesignshub.com/">
+    <meta property="twitter:title" content="JEFF DESIGNS HUB - Creative Design & Development Agency">
+    <meta property="twitter:description" content="Professional Graphic Design, Website Development & Mobile App Creation in Kenya">
+    <meta property="twitter:image" content="https://jeffdesignshub.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>JEFF DESIGNS HUB | Creative Design • Website Development • Mobile App Creation</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        /* ===== CSS RESET & GLOBAL STYLES ===== */
+        :root {
+            --primary-black: #0B0B0B;
+            --electric-blue: #2563EB;
+            --vibrant-orange: #F97316;
+            --light-gray: #F8FAFC;
+            --dark-gray: #1F2937;
+            --success-green: #10B981;
+            --warning-yellow: #F59E0B;
+            --danger-red: #EF4444;
+            --gradient-primary: linear-gradient(135deg, var(--electric-blue), var(--vibrant-orange));
+            --gradient-secondary: linear-gradient(135deg, #8B5CF6, #EC4899);
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --box-shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.2);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--light-gray);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.4rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #4B5563;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--electric-blue);
+            border: 2px solid var(--electric-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--electric-blue);
+            color: white;
+        }
+
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6B7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== TICKER SCROLLER ===== */
+        .ticker-container {
+            background: var(--primary-black);
+            color: white;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ticker-content {
+            display: flex;
+            animation: ticker 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .ticker-item {
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .logo span {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-black);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            background: var(--primary-black);
+            color: white;
+            padding-top: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--electric-blue);
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .shape:nth-child(odd) {
+            background: var(--vibrant-orange);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: calc(100vh - 120px);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #E5E7EB;
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .service-slider {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .slide-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .slide-content .icon {
+            font-size: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-visual {
+            position: relative;
+            height: 500px;
+        }
+
+        .floating-device {
+            position: absolute;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .device-1 {
+            width: 300px;
+            height: 200px;
+            top: 50px;
+            left: 0;
+            animation: float-device-1 6s ease-in-out infinite;
+        }
+
+        .device-2 {
+            width: 120px;
+            height: 240px;
+            top: 100px;
+            right: 50px;
+            animation: float-device-2 7s ease-in-out infinite;
+        }
+
+        .device-3 {
+            width: 180px;
+            height: 240px;
+            bottom: 50px;
+            right: 0;
+            animation: float-device-3 8s ease-in-out infinite;
+        }
+
+        @keyframes float-device-1 {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        @keyframes float-device-2 {
+            0%, 100% { transform: translateY(0) rotate(3deg); }
+            50% { transform: translateY(-25px) rotate(-3deg); }
+        }
+
+        @keyframes float-device-3 {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+
+        /* ===== TRUST SECTION ===== */
+        .trust-section {
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6B7280;
+            font-size: 1rem;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            background: var(--light-gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            transition: left 0.6s ease;
+        }
+
+        .service-card:hover::before {
+            left: 0;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            margin: 1.5rem 0;
+        }
+
+        .feature-tag {
+            display: inline-block;
+            background: var(--light-gray);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.25rem;
+            color: #4B5563;
+        }
+
+        /* ===== PORTFOLIO SECTION ===== */
+        .portfolio-section {
+            background: white;
+        }
+
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #E5E7EB;
+            background: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-overlay p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-section {
+            background: var(--light-gray);
+        }
+
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+            margin: 2rem;
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: #4B5563;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h5 {
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: #6B7280;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* ===== PRICING SECTION ===== */
+        .pricing-section {
+            background: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid #E5E7EB;
+        }
+
+        .pricing-card.popular {
+            border-color: var(--vibrant-orange);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .pricing-card.popular:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .pricing-badge {
+            background: var(--vibrant-orange);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin: 1.5rem 0;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .price-period {
+            color: #6B7280;
+            font-size: 1rem;
+        }
+
+        .pricing-features {
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: #4B5563;
+        }
+
+        .pricing-features li.available {
+            color: var(--success-green);
+        }
+
+        .pricing-features li.unavailable {
+            color: #9CA3AF;
+            text-decoration: line-through;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: var(--primary-black);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            color: white;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--electric-blue);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* ===== LIVE TIME & DATE ===== */
+        .datetime-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .time-display {
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--primary-black);
+        }
+
+        .date-display {
+            color: #6B7280;
+            font-size: 0.9rem;
+        }
+
+        /* ===== COUNTDOWN OFFER ===== */
+        .countdown-offer {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            margin: 4rem auto;
+            max-width: 800px;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .countdown-unit {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            min-width: 80px;
+        }
+
+        .countdown-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===== FLOATING WHATSAPP ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            left: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-black);
+            color: white;
+            padding: 5rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: #9CA3AF;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--electric-blue);
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #9CA3AF;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--electric-blue);
+            padding-left: 5px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            color: white;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--electric-blue);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #9CA3AF;
+            font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-visual {
+                height: 400px;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .floating-device {
+                max-width: 80%;
+            }
+            
+            .datetime-widget {
+                bottom: 80px;
+                right: 10px;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            
+            .whatsapp-float {
+                bottom: 140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-card {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 🕒 Ticker Scroller -->
+    <div class="ticker-container">
+        <div class="ticker-content">
+            <div class="ticker-item">
+                <span>🔥 LIMITED OFFER: Get 20% OFF on Logo Design this week!</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>⭐ Trusted by 150+ Businesses in Kenya</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>🚀 New: Mobile App Development Starting at KES 25,000</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>📞 Call/WhatsApp: +254 702 782 850</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>💡 Free Consultation Available</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>⚡ Websites Built in 7 Days Guaranteed!</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>🎨 Graphic Design • Websites • Mobile Apps</span>
+                <span>🎯</span>
+            </div>
+            <div class="ticker-item">
+                <span>🎯 Designing Ideas. Building Digital Experiences.</span>
+                <span>🎯</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔝 Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span>🎨</span>
+                <span>JEFF DESIGNS HUB</span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:+254702782850" class="btn btn-primary">📞 Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🎯 Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <!-- Animated shapes will be generated by JS -->
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>We Design, Build & Grow <span class="gradient-text">Your Digital Brand</span></h1>
+                
+                <div class="service-slider">
+                    <div class="slide-content">
+                        <span class="icon">✨</span>
+                        <span id="serviceText">Logo Design</span>
+                    </div>
+                </div>
+                
+                <p class="hero-subtitle">Logos • Posters • Websites • Mobile Apps<br>Creative Design • Website Development • Mobile App Creation</p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">👉 Get a Free Quote</a>
+                    <a href="#portfolio" class="btn btn-secondary">👁️ View Our Work</a>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">✅ 100% Satisfaction</div>
+                    <div class="trust-item">✅ Fast Delivery</div>
+                    <div class="trust-item">✅ 24/7 Support</div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-device device-1">
+                    <div class="device-screen"></div>
+                </div>
+                <div class="floating-device device-2">
+                    <div class="device-screen"></div>
+                </div>
+                <div class="floating-device device-3">
+                    <div class="device-screen"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔐 Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>✔ Trusted by Businesses & Organizations</h2>
+                <p class="section-subtitle">Years of experience delivering quality digital solutions</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🎨</div>
+                    <div class="stat-number" id="projectsCount">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" id="clientsCount">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">✨</div>
+                    <div class="stat-number" id="designsCount">0</div>
+                    <div class="stat-label">Designs Delivered</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-number" id="experienceCount">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎯 Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services That <span class="gradient-text">Sell</span></h2>
+                <p class="section-subtitle">Professional solutions designed to help you succeed online</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Logo Design Card -->
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Logo Design</h3>
+                    <p>Professional logos that make your brand memorable and trusted.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Multiple Concepts</span>
+                        <span class="feature-tag">Brand Guidelines</span>
+                        <span class="feature-tag">All File Formats</span>
+                        <span class="feature-tag">Unlimited Revisions</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+                
+                <!-- Website Development Card -->
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>Modern, fast websites that convert visitors into paying clients.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Responsive Design</span>
+                        <span class="feature-tag">SEO Optimized</span>
+                        <span class="feature-tag">CMS Integration</span>
+                        <span class="feature-tag">1 Year Support</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+                
+                <!-- Mobile App Card -->
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Creation</h3>
+                    <p>User-friendly mobile applications for Android and iOS platforms.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Native Apps</span>
+                        <span class="feature-tag">UI/UX Design</span>
+                        <span class="feature-tag">App Store Deployment</span>
+                        <span class="feature-tag">Maintenance</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+                
+                <!-- Graphic Design Card -->
+                <div class="service-card">
+                    <div class="service-icon">🖼️</div>
+                    <h3>Graphic Design</h3>
+                    <p>Eye-catching designs for print and digital media.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Posters</span>
+                        <span class="feature-tag">Flyers</span>
+                        <span class="feature-tag">Business Cards</span>
+                        <span class="feature-tag">Social Media Graphics</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+                
+                <!-- Branding Card -->
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Brand Identity</h3>
+                    <p>Complete branding packages for a consistent visual identity.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Color Palette</span>
+                        <span class="feature-tag">Typography</span>
+                        <span class="feature-tag">Brand Guidelines</span>
+                        <span class="feature-tag">Stationery Design</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+                
+                <!-- Digital Marketing Card -->
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your online presence with targeted marketing campaigns.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Social Media</span>
+                        <span class="feature-tag">Google Ads</span>
+                        <span class="feature-tag">Email Marketing</span>
+                        <span class="feature-tag">SEO Services</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🖼️ Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio That <span class="gradient-text">Proves</span></h2>
+                <p class="section-subtitle">Real projects delivering real results for our clients</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="websites">Websites</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 💬 Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span class="gradient-text">Testimonials</span></h2>
+                <p class="section-subtitle">What our clients say about working with us</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "JEFF DESIGNS HUB transformed our brand completely. Their logo design service was exceptional and the website they built increased our online sales by 300%. Highly professional!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <h5>Sarah Johnson</h5>
+                            <p>CEO, Tech Solutions Ltd</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "The mobile app they developed for our restaurant business has revolutionized our ordering system. Customer orders increased by 150% in just 3 months. Excellent work!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <h5>Michael Chen</h5>
+                            <p>Owner, Food Express</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "We needed a complete rebranding for our NGO. Jeff Designs Hub delivered beyond expectations. Their attention to detail and professional approach made all the difference."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">GW</div>
+                        <div class="author-info">
+                            <h5>Grace Wambui</h5>
+                            <p>Director, Hope Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💰 Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Clear <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle">Transparent pricing with no hidden costs</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Logo Design</h3>
+                    <div class="price-amount">KES 5,000</div>
+                    <div class="price-period">Starting Price</div>
+                    <ul class="pricing-features">
+                        <li class="available">✓ 3 Logo Concepts</li>
+                        <li class="available">✓ 3 Revisions</li>
+                        <li class="available">✓ Vector Files</li>
+                        <li class="available">✓ PNG & JPG Files</li>
+                        <li class="unavailable">✗ Brand Guidelines</li>
+                        <li class="unavailable">✗ Stationery Design</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Website Development</h3>
+                    <div class="price-amount">KES 15,000</div>
+                    <div class="price-period">Starting Price</div>
+                    <ul class="pricing-features">
+                        <li class="available">✓ 5 Pages Website</li>
+                        <li class="available">✓ Responsive Design</li>
+                        <li class="available">✓ SEO Optimized</li>
+                        <li class="available">✓ Contact Forms</li>
+                        <li class="available">✓ 1 Year Hosting</li>
+                        <li class="unavailable">✗ E-commerce</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Mobile App</h3>
+                    <div class="price-amount">KES 25,000</div>
+                    <div class="price-period">Starting Price</div>
+                    <ul class="pricing-features">
+                        <li class="available">✓ Android App</li>
+                        <li class="available">✓ UI/UX Design</li>
+                        <li class="available">✓ Admin Panel</li>
+                        <li class="available">✓ 3 Months Support</li>
+                        <li class="unavailable">✗ iOS Version</li>
+                        <li class="unavailable">✗ App Store Upload</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⏳ Countdown Offer -->
+    <div class="countdown-offer">
+        <h3>🔥 LIMITED TIME OFFER</h3>
+        <p>Get 20% OFF on all website development projects this month only!</p>
+        <div class="countdown-timer">
+            <div class="countdown-unit">
+                <span class="countdown-value" id="days">03</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-value" id="hours">15</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-value" id="minutes">47</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-value" id="seconds">32</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+        <a href="#contact" class="btn btn-secondary" style="background: white; color: var(--electric-blue);">Claim Offer Now</a>
+    </div>
+
+    <!-- 📞 Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle" style="color: #9CA3AF;">Get in touch to start your project today</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+254 702 782 850</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>jeffdesignshub@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 8AM - 6PM</p>
+                            <p>Sat: 9AM - 2PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="">Select Service</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="website">Website Development</option>
+                                <option value="mobile">Mobile App Creation</option>
+                                <option value="graphic">Graphic Design</option>
+                                <option value="branding">Brand Identity</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🕒 Live Time & Date Widget -->
+    <div class="datetime-widget">
+        <div class="time-display" id="currentTime">00:00:00</div>
+        <div class="date-display" id="currentDate">Monday, 1 January 2024</div>
+    </div>
+
+    <!-- 💬 Floating WhatsApp Button -->
+    <a href="https://wa.me/254702782850?text=Hello%20JEFF%20DESIGNS%20HUB,%20I%20need%20help%20with..." 
+       class="whatsapp-float" 
+       target="_blank">
+        💬
+    </a>
+
+    <!-- 🏁 Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">JEFF DESIGNS HUB</div>
+                    <p class="footer-description">Designing Ideas. Building Digital Experiences. Professional creative and technology-driven agency specializing in graphic design, branding, website development, and mobile application creation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Logo Design</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Mobile App Creation</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Brand Identity</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-description">Subscribe to get updates on offers and design tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JEFF DESIGNS HUB. All rights reserved. | Phone: +254 702 782 850 | Email: jeffdesignshub@gmail.com</p>
+                <p>Location: Kenya | Creative Design • Website Development • Mobile App Creation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 📜 JavaScript -->
+    <script>
+        // ===== DOM Elements =====
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const serviceText = document.getElementById('serviceText');
+        const currentTime = document.getElementById('currentTime');
+        const currentDate = document.getElementById('currentDate');
+        const floatingShapes = document.querySelector('.floating-shapes');
+        const portfolioGrid = document.querySelector('.portfolio-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        
+        // ===== Portfolio Data =====
+        const portfolioItems = [
+            { 
+                category: 'logos', 
+                title: 'Tech Solutions Logo', 
+                image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=300&fit=crop',
+                description: 'Modern tech company logo design'
+            },
+            { 
+                category: 'websites', 
+                title: 'E-commerce Website', 
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop',
+                description: 'Full online shopping platform'
+            },
+            { 
+                category: 'mobile', 
+                title: 'Food Delivery App', 
+                image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop',
+                description: 'Restaurant mobile application'
+            },
+            { 
+                category: 'posters', 
+                title: 'Music Festival Poster', 
+                image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w-400&h-300&fit-crop',
+                description: 'Event promotional poster design'
+            },
+            { 
+                category: 'logos', 
+                title: 'Coffee Shop Branding', 
+                image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&h=300&fit=crop',
+                description: 'Complete coffee shop branding'
+            },
+            { 
+                category: 'websites', 
+                title: 'Hotel Booking System', 
+                image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop',
+                description: 'Hotel reservation website'
+            }
+        ];
+
+        // ===== Service Rotation =====
+        const services = [
+            "Logo Design",
+            "Website Development",
+            "Mobile App Creation",
+            "Brand Identity",
+            "Graphic Design",
+            "Digital Marketing"
+        ];
+
+        let serviceIndex = 0;
+        
+        function rotateServices() {
+            serviceText.textContent = services[serviceIndex];
+            serviceIndex = (serviceIndex + 1) % services.length;
+        }
+        
+        // Rotate every 3 seconds
+        setInterval(rotateServices, 3000);
+
+        // ===== Animated Statistics =====
+        function animateCounter(elementId, targetValue, duration = 2000) {
+            const element = document.getElementById(elementId);
+            let start = 0;
+            const increment = targetValue / (duration / 16); // 60fps
+            
+            function updateCounter() {
+                start += increment;
+                if (start < targetValue) {
+                    element.textContent = Math.floor(start) + '+';
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = targetValue + '+';
+                }
+            }
+            updateCounter();
+        }
+
+        // ===== Live Time & Date =====
+        function updateDateTime() {
+            const now = new Date();
+            
+            // Format time
+            const timeOptions = { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit',
+                hour12: true 
+            };
+            currentTime.textContent = now.toLocaleTimeString('en-KE', timeOptions);
+            
+            // Format date
+            const dateOptions = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            currentDate.textContent = now.toLocaleDateString('en-KE', dateOptions);
+        }
+
+        // ===== Countdown Timer =====
+        function updateCountdown() {
+            const now = new Date();
+            const endDate = new Date(now.getFullYear(), now.getMonth() + 1, 0); // End of month
+            
+            const diff = endDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // ===== Floating Shapes Animation =====
+        function createFloatingShapes() {
+            for (let i = 0; i < 20; i++) {
+                const shape = document.createElement('div');
+                shape.className = 'shape';
+                
+                // Random position
+                shape.style.left = Math.random() * 100 + '%';
+                shape.style.top = Math.random() * 100 + '%';
+                
+                // Random size
+                const size = 10 + Math.random() * 30;
+                shape.style.width = size + 'px';
+                shape.style.height = size + 'px';
+                
+                // Random opacity
+                shape.style.opacity = 0.05 + Math.random() * 0.15;
+                
+                floatingShapes.appendChild(shape);
+                
+                // Animate
+                animateShape(shape);
+            }
+        }
+
+        function animateShape(shape) {
+            const duration = 3 + Math.random() * 4;
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            
+            shape.animate([
+                { transform: 'translate(0, 0)' },
+                { transform: `translate(${x}px, ${y}px)` }
+            ], {
+                duration: duration * 1000,
+                direction: 'alternate',
+                iterations: Infinity,
+                easing: 'ease-in-out'
+            });
+        }
+
+        // ===== Portfolio Filtering =====
+        function loadPortfolioItems(filter = 'all') {
+            portfolioGrid.innerHTML = '';
+            
+            const filteredItems = filter === 'all' 
+                ? portfolioItems 
+                : portfolioItems.filter(item => item.category === filter);
+            
+            filteredItems.forEach(item => {
+                const portfolioItem = document.createElement('div');
+                portfolioItem.className = 'portfolio-item';
+                portfolioItem.dataset.category = item.category;
+                
+                portfolioItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>${item.title}</h4>
+                        <p>${item.description}</p>
+                        <a href="#contact" class="btn btn-primary" style="background: white; color: var(--electric-blue);">View Project</a>
+                    </div>
+                `;
+                
+                portfolioGrid.appendChild(portfolioItem);
+            });
+        }
+
+        // ===== Contact Form Submission =====
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // In a real application, you would send this to your backend
+            // For now, show a success message
+            alert('Thank you for your message! We will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // ===== Mobile Menu Toggle =====
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // ===== Smooth Scrolling =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        navLinks.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // ===== Portfolio Filtering =====
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter portfolio items
+                const filter = this.dataset.filter;
+                loadPortfolioItems(filter);
+            });
+        });
+
+        // ===== Initialize Everything =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create floating shapes
+            createFloatingShapes();
+            
+            // Load portfolio items
+            loadPortfolioItems();
+            
+            // Start statistics animation after a delay
+            setTimeout(() => {
+                animateCounter('projectsCount', 247);
+                animateCounter('clientsCount', 156);
+                animateCounter('designsCount', 589);
+                animateCounter('experienceCount', 5);
+            }, 1000);
+            
+            // Start time updates
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+            
+            // Start countdown
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            
+            // Initialize service rotation
+            rotateServices();
+            
+            // Responsive menu handling
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.style.display = 'flex';
+                } else {
+                    navLinks.style.display = 'none';
+                }
+            });
+            
+            // Initialize based on current screen size
+            if (window.innerWidth <= 768) {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        });
+
+        // ===== Parallax Effect =====
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroBackground = document.querySelector('.hero-background');
+            
+            if (heroBackground) {
+                heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // ===== Intersection Observer for Animations =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .stat-card, .portfolio-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== SEO Enhancement =====
+        // Set dynamic meta description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        const pageTitle = document.title;
+        
+        // Log page view (simulate analytics)
+        console.log(`Page loaded: ${pageTitle}`);
+        
+        // Structured data for SEO
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "JEFF DESIGNS HUB",
+            "description": "Creative Design • Website Development • Mobile App Creation",
+            "url": "https://jeffdesignshub.com",
+            "telephone": "+254702782850",
+            "email": "jeffdesignshub@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "KE",
+                "addressRegion": "Kenya"
+            },
+            "sameAs": [
+                "https://facebook.com/jeffdesignshub",
+                "https://instagram.com/jeffdesignshub"
+            ],
+            "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "5000",
+                "highPrice": "50000",
+                "priceCurrency": "KES",
+                "offerCount": "6"
+            }
+        };
+
+        // Add structured data to page
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+    </script>
+
+    <!-- 📊 Google Analytics (Place your tracking ID here) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</body>
+</html>
